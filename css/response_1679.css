@@ -1,0 +1,377 @@
+@media print,
+(max-width: 1679px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont
+    {
+        padding: 0 24px;
+    }
+
+    .cont.mini
+    {
+        max-width: 809px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu
+    {
+        margin-left: 40px;
+    }
+
+    header .menu_item + .menu_item
+    {
+        margin-left: 32px;
+    }
+
+    header .menu_item > a
+    {
+        font-size: 16px;
+    }
+
+
+    header .socials
+    {
+        margin-left: 40px;
+    }
+
+    header .socials a + a
+    {
+        margin-left: 12px;
+    }
+
+
+    header .search
+    {
+        width: 227px;
+        margin-left: 40px;
+    }
+
+
+    header .account
+    {
+        margin-left: 32px;
+    }
+
+
+
+    /*-----------
+        Stock
+    -----------*/
+    .stock .label
+    {
+        font-size: 22px;
+    }
+
+
+    .stock .title
+    {
+        font-size: 22px;
+
+        margin-left: 16px;
+    }
+
+
+    .stock .finish .timer
+    {
+        font-size: 44px;
+    }
+
+
+    .stock .img
+    {
+        right: 228px;
+    }
+
+
+    .stock .close_btn
+    {
+        right: 20px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .image
+    {
+        height: 508px;
+    }
+
+
+
+    /*----------------------
+        Who we work with
+    ----------------------*/
+    .who_we_work_with .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .who_we_work_with .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .who_we_work_with .item .thumb
+    {
+        width: 168px;
+    }
+
+
+    .who_we_work_with .item .data
+    {
+        width: calc(100% - 168px);
+        padding: 24px;
+    }
+
+
+
+    /*-----------------
+        Cooperation
+    -----------------*/
+    .cooperation .image
+    {
+        height: 508px;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .brands .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .articles .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+    .articles .row > *.middle_w
+    {
+        width: calc(50% - 24px);
+    }
+
+    .articles .row > *.big_w
+    {
+        width: calc(100% - 24px);
+    }
+
+
+
+    /*-------------------
+        Search result
+    -------------------*/
+    .search_result .section + .section
+    {
+        margin-top: 48px;
+    }
+
+
+    .search_result .title
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .swiper
+    {
+        height: 448px;
+    }
+
+    .categories .swiper-slide,
+    .categories .category
+    {
+        height: 212px;
+    }
+
+
+
+    /*------------------
+        About brands
+    ------------------*/
+    .about_brands .brand + .brand
+    {
+        margin-top: 24px;
+    }
+
+
+    .about_brands .brand
+    {
+        padding: 23px;
+    }
+
+
+
+    /*---------------
+        Education
+    ---------------*/
+    .education .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .education .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .files .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .item .name
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*------------------
+        Coverage map
+    ------------------*/
+    .coverage_map .map
+    {
+        height: 508px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .item .val
+    {
+        font-size: 44px;
+    }
+
+
+
+    /*------------------
+        Online shops
+    ------------------*/
+    .online_shops .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .online_shops .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .online_shops .item .name
+    {
+        font-size: 60px;
+    }
+
+
+    .online_shops .item .img
+    {
+        right: 0;
+
+        max-height: calc(100% + 24px);
+    }
+
+
+
+    /*---------------
+        How apply
+    ---------------*/
+    .how_apply .items
+    {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data
+    {
+        width: 400px;
+    }
+
+
+    footer .links
+    {
+        font-size: 16px;
+    }
+
+    footer .links > * > * + *
+    {
+        margin-top: 68px;
+    }
+
+
+    footer .socials a + a
+    {
+        margin-left: 24px;
+    }
+}

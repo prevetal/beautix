@@ -1,0 +1,181 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont
+    {
+        padding: 0 15px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 15px;
+    }
+
+
+    .fancybox__content > .carousel__button.is-close
+    {
+        top: 15px;
+        right: 15px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .form .submit
+    {
+        padding: 0;
+    }
+
+    .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Comments
+    --------------*/
+    .comments .comment .avatar + *
+    {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+
+    .comments .comment .head
+    {
+        min-height: 0;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .swiper
+    {
+        height: 394px;
+    }
+
+    .categories .swiper-slide,
+    .categories .category
+    {
+        width: 185px;
+        height: 185px;
+    }
+
+
+
+    /*-------------------
+        Photo gallery
+    -------------------*/
+    .photo_gallery
+    {
+        padding: 68px 0;
+    }
+
+
+    .photo_gallery .row
+    {
+        margin-left: 0;
+    }
+
+    .photo_gallery .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*------------------
+        Online shops
+    ------------------*/
+    .online_shops .item .name,
+    .online_shops .item .name.center
+    {
+        font-size: 32px;
+    }
+
+
+    .online_shops .item .btn
+    {
+        bottom: 16px;
+        left: 16px;
+
+        width: calc(100% - 32px);
+    }
+
+
+    .online_shops .item .img
+    {
+        max-height: calc(100% - 100px);
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .data .product_name
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*------------------
+        How it works
+    ------------------*/
+    .how_it_works .data
+    {
+        padding: 24px;
+    }
+
+
+
+    /*---------------
+        How apply
+    ---------------*/
+    .how_apply .item
+    {
+        font-size: 15px;
+    }
+
+    .how_apply .item .progress
+    {
+        bottom: 8px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 19px;
+    }
+}

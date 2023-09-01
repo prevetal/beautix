@@ -1,0 +1,790 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 100px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 32px;
+    }
+
+
+
+    /*---------------
+        Load more
+    ---------------*/
+    .load_more
+    {
+        margin-top: 48px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .header_wrap
+    {
+        height: 0 !important;
+        margin: 0;
+    }
+
+
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+
+        width: 310px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 0;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #fff;
+    }
+
+    header.show
+    {
+        transform: translateX(0);
+    }
+
+
+    header .scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 20px 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        overscroll-behavior-y: contain;
+    }
+
+    header .scroll > *
+    {
+        width: 100%;
+    }
+
+
+
+    header .logo
+    {
+        display: none;
+    }
+
+
+    header .menu
+    {
+        display: block;
+
+        width: 100%;
+        margin: 0;
+    }
+
+    header .menu_item + .menu_item
+    {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+
+    header .socials
+    {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+
+    header .search
+    {
+        width: 100%;
+        margin-top: 24px;
+        margin-left: 0;
+    }
+
+    header .search .icon
+    {
+        left: 0;
+    }
+
+    header .search .input
+    {
+        padding-right: 0;
+        padding-left: 40px;
+    }
+
+
+    header .cart
+    {
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+
+    header .account
+    {
+        margin-top: 16px;
+        margin-left: auto;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*-----------
+        Stock
+    -----------*/
+    .stock .label
+    {
+        width: 100%;
+    }
+
+
+    .stock .title
+    {
+        width: 100%;
+        margin-top: 8px;
+        margin-left: 0;
+    }
+
+
+    .stock .finish
+    {
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+
+    .stock .finish .timer
+    {
+        font-size: 48px;
+    }
+
+
+    .stock .finish .exp
+    {
+        font-size: 14px;
+    }
+
+
+    .stock .img
+    {
+        display: none;
+    }
+
+    .stock .mob_img
+    {
+        display: block;
+    }
+
+
+    .stock .close_btn
+    {
+        top: 8px;
+        right: 8px;
+        bottom: auto;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .image
+    {
+        width: calc(100% - 372px);
+        height: 375px;
+    }
+
+
+    .about_info .data
+    {
+        width: 348px;
+    }
+
+
+
+    /*----------------------
+        Who we work with
+    ----------------------*/
+    .who_we_work_with .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*-----------------
+        Cooperation
+    -----------------*/
+    .cooperation .image
+    {
+        width: calc(100% - 372px);
+        height: 375px;
+    }
+
+
+    .cooperation .data
+    {
+        width: 348px;
+    }
+
+
+    .cooperation .btns .btn
+    {
+        width: 100%;
+    }
+
+    .cooperation .btns .btn + .btn
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article.big_w .thumb
+    {
+        padding-bottom: 357px;
+    }
+
+    .articles .article.big_w .link
+    {
+        display: none;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*-------------------
+        Search result
+    -------------------*/
+    .search_result .title
+    {
+        margin-bottom: 32px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        width: calc(100% - 364px);
+        min-height: 320px;
+    }
+
+
+    .contacts_info .map .video_route_btn
+    {
+        font-size: 15px;
+
+        top: 16px;
+        left: 16px;
+
+        padding: 12px 24px;
+    }
+
+    .contacts_info .map .video_route_btn .icon
+    {
+        margin-right: 8px;
+    }
+
+
+    .contacts_info .data
+    {
+        width: 340px;
+    }
+
+
+    .contacts_info .val
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*---------------
+        Subscribe
+    ---------------*/
+    .subscribe .data
+    {
+        padding: 48px;
+    }
+
+
+    .subscribe .data .desc
+    {
+        margin-top: 24px;
+    }
+
+
+    .subscribe .img
+    {
+        right: -124px;
+    }
+
+
+
+    /*------------------
+        About brands
+    ------------------*/
+    .about_brands .brand .data,
+    .about_brands .brand .image + .data
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .about_brands .brand .logo
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .about_brands .brand .link
+    {
+        margin-top: 16px;
+    }
+
+
+    .about_brands .brand .image
+    {
+        width: 100%;
+        height: 0;
+        margin-top: 48px;
+        padding-bottom: 60.702%;
+
+        order: 2;
+    }
+
+
+
+    /*---------------
+        Education
+    ---------------*/
+    .education .row > *
+    {
+        width: calc(33.333% - 24px);
+    }
+
+
+
+    /*--------------
+        Teachers
+    --------------*/
+    .teachers .person .link
+    {
+        opacity: 1;
+    }
+
+
+
+    /*-------------------
+        Photo gallery
+    -------------------*/
+    .photo_gallery
+    {
+        padding: 84px 0 68px;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .row > *
+    {
+        width: calc(33.333% - 24px);
+    }
+
+
+
+    /*------------------
+        Coverage map
+    ------------------*/
+    .coverage_map .block_head
+    {
+        width: 348px;
+    }
+
+
+    .coverage_map .map
+    {
+        width: calc(100% - 372px);
+        height: 375px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .item .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .row
+    {
+        margin-left: -40px;
+    }
+
+    .stats .row > *
+    {
+        width: calc(25% - 40px);
+        margin-left: 40px;
+    }
+
+
+    .stats .item .val
+    {
+        font-size: 36px;
+
+        margin-bottom: 8px;
+    }
+
+
+
+    /*------------------
+        Online shops
+    ------------------*/
+    .online_shops .item .name,
+    .online_shops .item .name.center
+    {
+        font-size: 44px;
+
+        top: 24px;
+        bottom: auto;
+        left: 24px;
+
+        transform: none;
+    }
+
+
+    .online_shops .item .btn
+    {
+        right: 24px;
+        bottom: 24px;
+    }
+
+
+    .online_shops .item .img
+    {
+        right: 0;
+
+        max-height: calc(100% - 60px);
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy .shops .data
+    {
+        width: 348px;
+    }
+
+
+    .where_buy .shops .shop .logo + *
+    {
+        width: calc(100% - 84px);
+    }
+
+
+    .where_buy .shops .map
+    {
+        width: calc(100% - 372px);
+    }
+
+
+
+    /*----------------
+        Brand info
+    ----------------*/
+    .brand_info .name
+    {
+        font-size: 80px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-----------------
+        Collections
+    -----------------*/
+    .collections .swiper-slide,
+    .collections .swiper-slide.big
+    {
+        width: 480px;
+    }
+
+
+    .collections .collection .thumb
+    {
+        height: 260px;
+    }
+
+
+    .collections .collection .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*----------
+        Kits
+    ----------*/
+    .kits .head .title
+    {
+        font-size: 20px;
+    }
+
+
+    .kits .head .desc
+    {
+        font-size: 15px;
+    }
+
+
+
+    .kits .product
+    {
+        display: flex;
+
+        width: 100%;
+
+        text-align: left;
+
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+
+    .kits .product .thumb
+    {
+        width: 120px;
+        height: 120px;
+        margin: 0;
+    }
+
+    .kits .product .thumb + *
+    {
+        width: calc(100% - 144px);
+
+        align-self: center;
+    }
+
+
+    .kits .plus
+    {
+        margin: 8px 60px;
+    }
+
+
+    .kits .controls
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*------------------
+        What contain
+    ------------------*/
+    .what_contain .item
+    {
+        padding: 24px;
+    }
+
+
+
+    /*------------
+        Videos
+    ------------*/
+    .videos .wheelSlider-container
+    {
+        padding-bottom: 32px;
+    }
+
+
+    .videos .wheelSlider-container .slide.prev
+    {
+        left: -92%;
+    }
+
+    .videos .wheelSlider-container .slide.next
+    {
+        left: 92%;
+    }
+
+
+    .videos .wheelSlider-container .wheelSlider-arrow[data-action='prev'],
+    .videos .wheelSlider-container .wheelSlider-arrow[data-action='next']
+    {
+        color: rgba(255, 255, 255, .80);
+
+        top: 100%;
+        bottom: 0;
+
+        width: 60px;
+        height: 60px;
+        margin: 0;
+
+        background: rgba(255, 255, 255, .20);
+    }
+
+
+    .videos .wheelSlider-container .wheelSlider-arrow[data-action='prev']
+    {
+        right: 50%;
+
+        margin-right: 12px;
+    }
+
+    .videos .wheelSlider-container .wheelSlider-arrow[data-action='next']
+    {
+        left: 50%;
+
+        margin-left: 12px;
+    }
+
+
+
+    /*------------------
+        How it works
+    ------------------*/
+    .how_it_works .img
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        How apply
+    ---------------*/
+    .how_apply .items
+    {
+        padding-right: 0;
+    }
+
+
+    .how_apply .item
+    {
+        padding-bottom: 24px;
+    }
+
+    .how_apply .item .progress
+    {
+        bottom: 8px;
+    }
+
+
+
+    /*-------------------
+        Photo gallery
+    -------------------*/
+    .photo_gallery .item .info
+    {
+        padding: 16px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 60px 0;
+    }
+
+
+    footer .data
+    {
+        width: 340px;
+    }
+
+
+    footer .links > * + *
+    {
+        margin-left: 40px;
+    }
+
+
+    footer .socials
+    {
+        position: absolute;
+        top: 60px;
+        right: 24px;
+    }
+}

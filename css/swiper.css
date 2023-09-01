@@ -1,0 +1,132 @@
+.swiper-button-next,
+.swiper-button-prev
+{
+    color: currentColor;
+
+    top: auto;
+    bottom: 100%;
+
+    display: flex;
+
+    width: 68px;
+    height: 68px;
+    margin: 0 0 16px;
+
+    transition: .2s linear;
+    transform: none;
+
+    border-radius: 16px;
+    background: rgba(20, 17, 22, .05);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.swiper-button-prev
+{
+    right: 84px;
+    left: auto;
+}
+
+.swiper-button-next
+{
+    right: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after
+{
+    display: none;
+}
+
+
+.swiper-button-next .icon,
+.swiper-button-prev .icon
+{
+    display: block;
+
+    width: 10px;
+    height: 18px;
+}
+
+.swiper-button-next .icon
+{
+    transform: rotate(180deg);
+}
+
+
+.swiper-button-prev:hover
+{
+    padding-right: 6px;
+}
+
+.swiper-button-next:hover
+{
+    padding-left: 6px;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: flex;
+
+    width: 100%;
+    height: 8px;
+    margin-top: 24px;
+
+    pointer-events: none;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.swiper-pagination-bullet
+{
+    display: block;
+
+    width: 8px;
+    height: 8px;
+
+    transition: .2s linear;
+    pointer-events: auto;
+
+    opacity: 1;
+    border-radius: 50%;
+    background: #d9d9d9;
+}
+
+.swiper-pagination-bullet + .swiper-pagination-bullet
+{
+    margin-left: 8px !important;
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet.active
+{
+    background: rgba(20, 17, 22, .80);
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}

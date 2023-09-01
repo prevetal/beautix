@@ -1,0 +1,358 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 22px;
+    }
+
+    .swiper-button-prev
+    {
+        right: 68px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item + .accordion_item
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu_item + .menu_item
+    {
+        margin-left: 24px;
+    }
+
+
+    header .socials
+    {
+        margin-left: 24px;
+    }
+
+
+    header .search
+    {
+        width: 173px;
+        margin-left: 24px;
+    }
+
+
+    header .account
+    {
+        margin-left: 24px;
+    }
+
+
+
+    /*-----------
+        Stock
+    -----------*/
+    .stock .label
+    {
+        font-size: 20px;
+    }
+
+
+    .stock .title
+    {
+        font-size: 20px;
+
+        margin-left: 12px;
+    }
+
+
+    .stock .finish .timer
+    {
+        font-size: 40px;
+    }
+
+
+    .stock .finish .exp
+    {
+        font-size: 13px;
+    }
+
+
+    .stock .img
+    {
+        right: 204px;
+    }
+
+
+    .stock .close_btn
+    {
+        right: 16px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .image
+    {
+        width: calc(100% - 504px);
+        height: 440px;
+    }
+
+
+    .about_info .data
+    {
+        width: 480px;
+    }
+
+
+
+    /*----------------------
+        Who we work with
+    ----------------------*/
+    .who_we_work_with .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*-----------------
+        Cooperation
+    -----------------*/
+    .cooperation .image
+    {
+        width: calc(100% - 504px);
+        height: 440px;
+    }
+
+
+    .cooperation .data
+    {
+        width: 480px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article.big_w .thumb
+    {
+        padding-bottom: 456px;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        width: calc(100% - 420px);
+        min-height: 340px;
+    }
+
+
+    .contacts_info .data
+    {
+        width: 380px;
+    }
+
+
+    .contacts_info .val
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*------------------
+        About brands
+    ------------------*/
+    .about_brands .brand .data
+    {
+        width: 480px;
+        padding-left: 24px;
+    }
+
+    .about_brands .brand .image + .data
+    {
+        padding-right: 24px;
+    }
+
+
+    .about_brands .brand .image
+    {
+        width: calc(100% - 520px);
+        height: 560px;
+    }
+
+
+
+    /*------------------
+        Coverage map
+    ------------------*/
+    .coverage_map .block_head
+    {
+        width: 480px;
+    }
+
+
+    .coverage_map .map
+    {
+        width: calc(100% - 504px);
+        height: 440px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .row
+    {
+        margin-left: -64px;
+    }
+
+    .stats .row > *
+    {
+        width: calc(25% - 64px);
+        margin-left: 64px;
+    }
+
+
+    .stats .item .val
+    {
+        font-size: 40px;
+
+        margin-bottom: 16px;
+    }
+
+
+
+    /*------------------
+        Online shops
+    ------------------*/
+    .online_shops .item .name
+    {
+        font-size: 52px;
+    }
+
+
+    .online_shops .item .img
+    {
+        right: -40px;
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy .shops .data
+    {
+        width: 480px;
+    }
+
+
+    .where_buy .shops .map
+    {
+        width: calc(100% - 504px);
+    }
+
+
+
+    /*----------------
+        Brand info
+    ----------------*/
+    .brand_info .name
+    {
+        font-size: 108px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item .name
+    {
+        font-size: 22px;
+        line-height: 100%;
+    }
+
+
+
+    /*-----------------
+        Collections
+    -----------------*/
+    .collections .collection .name
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*----------
+        Kits
+    ----------*/
+    .kits .head .title
+    {
+        font-size: 22px;
+    }
+
+
+
+    .kits .data
+    {
+        padding: 24px 24px 32px;
+    }
+
+
+
+    /*------------
+        Videos
+    ------------*/
+    .videos
+    {
+        padding: 100px 0;
+    }
+
+
+    .videos .wheelSlider-container .slide.prev
+    {
+        left: -100%;
+    }
+
+    .videos .wheelSlider-container .slide.next
+    {
+        left: 100%;
+    }
+
+
+
+    /*------------------
+        How it works
+    ------------------*/
+    .how_it_works .img
+    {
+        right: -140px;
+    }
+}

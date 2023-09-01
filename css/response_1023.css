@@ -1,0 +1,1018 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 34px;
+
+        border-radius: 8px;
+    }
+
+    .swiper-button-prev
+    {
+        right: 56px;
+    }
+
+
+    .swiper-button-next .icon,
+    .swiper-button-prev .icon
+    {
+        width: 9px;
+        height: 16px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
+    /*-------------------
+        Mob. all link
+    -------------------*/
+    .mob_all_link
+    {
+        display: block;
+    }
+
+
+
+    /*---------------
+        Load more
+    ---------------*/
+    .mob_load_more
+    {
+        display: block;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item + .accordion_item
+    {
+        margin-top: 16px;
+    }
+
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .all_link
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .tooltip .text
+    {
+        top: 100%;
+        right: 0;
+        left: auto;
+
+        margin-top: 4px;
+
+        transform: none;
+    }
+
+
+
+    /*-----------
+        Stock
+    -----------*/
+    .stock .label
+    {
+        font-size: 18px;
+    }
+
+
+    .stock .title
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .image
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 32px;
+        padding-bottom: 62.608%;
+    }
+
+
+    .about_info .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------
+        History
+    ------------*/
+    .history .swiper-slide
+    {
+        width: 240px;
+    }
+
+
+    .history .item .desc
+    {
+        font-size: 13px;
+    }
+
+
+
+    /*----------------------
+        Who we work with
+    ----------------------*/
+    .who_we_work_with .item .thumb
+    {
+        width: 100%;
+        height: 137px;
+
+        border-radius: 16px 16px 0 0;
+    }
+
+
+    .who_we_work_with .item .data
+    {
+        width: 100%;
+        padding: 32px;
+    }
+
+
+
+    /*-----------------
+        Cooperation
+    -----------------*/
+    .cooperation .image
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 32px;
+        padding-bottom: 62.608%;
+    }
+
+
+    .cooperation .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+    .brands .row > *:nth-child(4) ~ *:not(.mob_show)
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .head
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .articles .categories
+    {
+        width: 100%;
+        margin-top: 32px;
+        margin-left: 0;
+    }
+
+
+    .articles .categories .list
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .articles .categories .list::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .articles .categories .list::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .articles .categories .list > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .articles .categories .list > * + *
+    {
+        margin-left: 4px;
+    }
+
+
+    .articles .categories .spoler
+    {
+        display: none;
+    }
+
+
+
+    .articles .mob_slider
+    {
+        overflow: visible !important;
+    }
+
+
+    .articles .mob_slider .swiper-slide
+    {
+        width: 260px;
+    }
+
+
+    .articles .mob_slider .article .tags
+    {
+        margin-bottom: -6px;
+        margin-left: -6px;
+    }
+
+    .articles .mob_slider .article .tags > *
+    {
+        font-size: 10px;
+
+        margin-bottom: 6px;
+        margin-left: 6px;
+        padding: 6px 12px;
+    }
+
+
+
+    .articles .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .articles .article.big_w .thumb,
+    .articles .article.big_w .thumb + *
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .articles .article.middle_w .thumb
+    {
+        padding-bottom: 73.275%;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .tags
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px 48px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .article_info .tags::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .article_info .tags::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .article_info .tags > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .article_info .tags > * + *
+    {
+        margin-left: 4px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        width: 100%;
+        min-height: 345px;
+        margin-bottom: 24px;
+    }
+
+
+    .contacts_info .data
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .item + .item
+    {
+        margin-top: 24px;
+    }
+
+
+    .contacts_info .ya_map_link
+    {
+        margin-top: 32px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+
+
+    /*---------------
+        Education
+    ---------------*/
+    .education .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+    .education .row > *:nth-child(4) ~ *
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        Photo gallery
+    -------------------*/
+    .photo_gallery .row > *
+    {
+        width: calc(33.333% - 32px);
+    }
+
+
+
+    /*----------------------
+        Cooperation form
+    ----------------------*/
+    .cooperation_form .brands .list
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .cooperation_form .brands .list::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .cooperation_form .brands .list::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .cooperation_form .brands .list > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .cooperation_form .brands .list > * + *
+    {
+        margin-left: 4px;
+    }
+
+
+    .cooperation_form .brands .spoler
+    {
+        display: none;
+    }
+
+
+    /*----------------------
+        Cooperation form
+    ----------------------*/
+    .cooperation_form .form .line
+    {
+        margin-bottom: 24px;
+    }
+
+    .cooperation_form .form .columns
+    {
+        --form_columns_offset: 24px;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+    .files .row > *:nth-child(4) ~ *:not(.mob_show)
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Coverage map
+    ------------------*/
+    .coverage_map .block_head
+    {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+
+    .coverage_map .map
+    {
+        width: 100%;
+        height: 256px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .item .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .row
+    {
+        margin-bottom: -48px;
+        margin-left: -48px;
+    }
+
+    .stats .row > *
+    {
+        width: calc(50% - 48px);
+        margin-bottom: 48px;
+        margin-left: 48px;
+    }
+
+
+    .stats .item .val
+    {
+        font-size: 32px;
+        line-height: 100%;
+
+        margin-bottom: 8px;
+    }
+
+
+
+    /*------------------
+        Online shops
+    ------------------*/
+    .online_shops .row
+    {
+        margin-left: 0;
+    }
+
+    .online_shops .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .online_shops .item .name,
+    .online_shops .item .name.center
+    {
+        font-size: 40px;
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy .type
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .where_buy .tags
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .where_buy .tags::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .where_buy .tags::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .where_buy .tags > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .where_buy .tags > * + *
+    {
+        margin-left: 4px;
+    }
+
+
+    .where_buy .shops .list
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .where_buy .shops .list::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .where_buy .shops .list::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .where_buy .shops .list > *
+    {
+        display: inline-block;
+
+        width: 253px;
+        max-width: none;
+        margin: 0;
+        padding-right: 48px;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .where_buy .shops .list > * + *
+    {
+        margin-left: 4px;
+    }
+
+    .where_buy .shops .list > * + *
+    {
+        margin-top: 0;
+    }
+
+
+    .where_buy .shops .shop .logo + *
+    {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+
+    .where_buy .shops .data
+    {
+        width: 100%;
+    }
+
+
+    .where_buy .shops .map
+    {
+        width: 100%;
+        height: 345px;
+        margin-top: 24px;
+    }
+
+
+
+    /*----------------
+        Brand info
+    ----------------*/
+    .brand_info .name
+    {
+        font-size: 68px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item .name
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-----------------
+        Collections
+    -----------------*/
+    .collections .swiper-slide,
+    .collections .swiper-slide.big
+    {
+        width: 400px;
+    }
+
+
+    .collections .collection .thumb
+    {
+        height: 222px;
+    }
+
+
+
+    /*----------
+        Kits
+    ----------*/
+    .kits .head,
+    .kits .head:hover,
+    .kits .head.active
+    {
+        padding: 16px;
+    }
+
+
+    .kits .head .icon,
+    .kits .head.active .icon
+    {
+        position: relative;
+        left: 0;
+
+        width: 38px;
+        height: 43px;
+        margin: 0 0 8px;
+
+        transform: none;
+    }
+
+
+    .kits .head .title
+    {
+        font-size: 18px;
+    }
+
+
+    .kits .head .desc
+    {
+        font-size: 14px;
+
+        margin-top: 16px;
+    }
+
+
+    .kits .head .link
+    {
+        margin-top: 24px;
+    }
+
+
+    .kits .head .spoler_btn
+    {
+        top: 40px;
+        right: 16px;
+        bottom: auto;
+
+        margin: 0;
+    }
+
+
+    .kits .data
+    {
+        padding: 16px 16px 24px;
+    }
+
+
+
+    /*------------
+        Videos
+    ------------*/
+    .videos
+    {
+        padding: 84px 0;
+    }
+
+
+    .videos .wheelSlider-container
+    {
+        width: 560px;
+    }
+
+
+    .videos .video
+    {
+        height: 316px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .categories .list
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .product_info .categories .list::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .product_info .categories .list::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .product_info .categories .list > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .product_info .categories .list > * + *
+    {
+        margin-left: 4px;
+    }
+
+
+    .product_info .categories .spoler
+    {
+        display: none;
+    }
+
+
+
+    .product_info .images
+    {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .product_info .images .big
+    {
+        padding-bottom: 32px;
+    }
+
+    .product_info .images .swiper
+    {
+        overflow: visible !important;
+    }
+
+    .product_info .images .thumbs
+    {
+        display: none;
+    }
+
+
+    .product_info .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        How it works
+    ------------------*/
+    .how_it_works .data
+    {
+        padding: 40px;
+    }
+
+
+
+    /*---------------
+        How apply
+    ---------------*/
+    .how_apply .items
+    {
+        width: 100%;
+    }
+
+
+    .how_apply .item .progress
+    {
+        bottom: 16px;
+    }
+
+
+    .how_apply .image
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data
+    {
+        width: 100%;
+    }
+
+
+    footer .copyright
+    {
+        margin-top: 80px;
+        padding: 0;
+    }
+
+
+    footer .links
+    {
+        width: 100%;
+        margin-top: 68px;
+
+        justify-content: space-between;
+    }
+
+    footer .links > * + *
+    {
+        margin-left: auto;
+    }
+
+
+    footer .links > * > * + *
+    {
+        margin-top: 52px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 32px;
+    }
+}
