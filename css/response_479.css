@@ -70,6 +70,21 @@
     }
 
 
+    .comments .comment .bottom
+    {
+        flex-direction: column;
+    }
+
+
+    .comments .comment .reply_btn,
+    .comments .comment .bottom .reply_btn
+    {
+        margin-top: 24px;
+
+        order: 2;
+    }
+
+
 
     /*----------------
         Categories
@@ -151,7 +166,7 @@
     ------------------*/
     .how_it_works .data
     {
-        padding: 24px;
+        padding: 24px 24px 175px;
     }
 
 

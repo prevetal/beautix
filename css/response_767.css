@@ -66,6 +66,18 @@
 
 
 
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block figure img
+    {
+        min-height: 400px;
+
+        object-fit: cover;
+    }
+
+
+
     /*-----------
         Stock
     -----------*/
@@ -133,11 +145,12 @@
     }
 
 
+    .articles .article .thumb,
     .articles .article.big_w .thumb
     {
         width: 100%;
         margin-bottom: 16px;
-        padding-bottom: 73.275%;
+        padding-bottom: 52.076%;
     }
 
     .articles .article.big_w .thumb + *
@@ -159,9 +172,10 @@
         padding-bottom: 80px;
     }
 
+    .articles .article:not(.big_w):hover .thumb,
     .articles .article.big_w:hover .thumb
     {
-        padding-bottom: calc(73.275% - 64px);
+        padding-bottom: calc(52.076% - 64px);
     }
 
     .articles .article.big_w:hover .link
@@ -414,7 +428,8 @@
     }
 
 
-    .kits .product .thumb
+    .kits .product .thumb,
+    .kits .product:hover .thumb
     {
         width: 75px;
         height: 75px;
@@ -429,7 +444,8 @@
     }
 
 
-    .kits .product .price
+    .kits .product .price,
+    .kits .product:hover .price
     {
         font-size: 16px;
 
@@ -515,6 +531,34 @@
     .how_it_works .data
     {
         padding: 32px;
+        padding-bottom: 175px;
+    }
+
+
+    .how_it_works .mob_img
+    {
+        display: block;
+    }
+
+
+
+    /*---------------------
+        Fixed order btn
+    ---------------------*/
+    .fixed_order_btn
+    {
+        top: 181px;
+        bottom: auto;
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy .shops .back
+    {
+        display: none;
     }
 
 

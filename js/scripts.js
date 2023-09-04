@@ -917,6 +917,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		$(this).addClass('active')
 	})
+
+
+	// Акция
+	$('.stock .close_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.stock').hide()
+	})
 })
 
 

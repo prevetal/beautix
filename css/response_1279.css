@@ -135,15 +135,11 @@
         margin-left: 0;
     }
 
-    header .search .icon
+    header .search .input,
+    header .search .input:focus,
+    header .search .tips
     {
-        left: 0;
-    }
-
-    header .search .input
-    {
-        padding-right: 0;
-        padding-left: 40px;
+        background: #f3f3f3;
     }
 
 
@@ -629,7 +625,8 @@
     }
 
 
-    .kits .product .thumb
+    .kits .product .thumb,
+    .kits .product:hover .thumb
     {
         width: 120px;
         height: 120px;
@@ -641,6 +638,19 @@
         width: calc(100% - 144px);
 
         align-self: center;
+    }
+
+
+    .kits .product:hover .thumb .sticker,
+    .kits .product:hover .thumb img
+    {
+        transform: none;
+    }
+
+    .kits .product .price,
+    .kits .product:hover .price
+    {
+        margin-top: 24px;
     }
 
 
