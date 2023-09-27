@@ -547,8 +547,23 @@
     ---------------------*/
     .fixed_order_btn
     {
+        font-size: 14px;
+
         top: 181px;
         bottom: auto;
+
+        width: 123px;
+        height: 33px;
+        padding: 6px 12px;
+
+        transform: rotate(-90deg) translateY(45px);
+    }
+
+    .fixed_order_btn:hover
+    {
+        height: 33px;
+
+        transform: rotate(-90deg) translateY(45px);
     }
 
 

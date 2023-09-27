@@ -161,6 +161,7 @@
     /*-----------------
         Mob. header
     -----------------*/
+    .mob_header_wrap,
     .mob_header
     {
         display: block;
@@ -608,6 +609,43 @@
         font-size: 15px;
     }
 
+
+
+
+    .kits .slider
+    {
+        width: 100%;
+    }
+
+
+    .kits .slider .swiper
+    {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+
+    .kits .controls
+    {
+        position: relative;
+    }
+
+
+    .kits .alternatives
+    {
+        font-size: 14px;
+
+        margin: 0 24px;
+    }
+
+
+    .kits .slider .swiper-button-next,
+    .kits .slider .swiper-button-prev
+    {
+        width: 48px;
+        height: 49px;
+    }
 
 
     .kits .product

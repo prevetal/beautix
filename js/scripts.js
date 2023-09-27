@@ -860,6 +860,22 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
+	// Товар в избравнное
+	$('.product_info .data .favorite .btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+	})
+
+
+	// Спасибо за ответ
+	$('.comments .comment .thanks').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+	})
+
+
 	// Как применять?
 	let currentHowApplyItem = 0
 
@@ -868,10 +884,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	currentHowApplyItem++
 
-	setInterval(() => {
-		if(currentHowApplyItem == $('.how_apply .item').length) {
-			currentHowApplyItem = 0
-		}
+	const InitInterval = () => {
+		interval = setInterval(() => {
+			if(currentHowApplyItem == $('.how_apply .item').length) {
+				currentHowApplyItem = 0
+			}
+
+			$('.how_apply .image img').hide()
+			$('.how_apply .image img').eq(currentHowApplyItem).fadeIn(300)
+
+			$('.how_apply .item').removeClass('active')
+			$('.how_apply .item').eq(currentHowApplyItem).addClass('active')
+
+			currentHowApplyItem++
+		}, 4000)
+	}
+
+	InitInterval()
+
+
+	$('.how_apply .item').click(function(e) {
+		e.preventDefault()
+
+		clearInterval(interval)
+
+		currentHowApplyItem = $(this).index()
 
 		$('.how_apply .image img').hide()
 		$('.how_apply .image img').eq(currentHowApplyItem).fadeIn(300)
@@ -879,8 +916,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		$('.how_apply .item').removeClass('active')
 		$('.how_apply .item').eq(currentHowApplyItem).addClass('active')
 
-		currentHowApplyItem++
-	}, 4000)
+		currentHowApplyItem = currentHowApplyItem + 1
+
+		InitInterval()
+	})
 
 
 	// Спойлер описания бренда
@@ -944,6 +983,22 @@ window.addEventListener('load', function () {
 	headerInit && $(window).scrollTop() > 0
 		? $('header').addClass('fixed')
 		: $('header').removeClass('fixed')
+
+
+	// Фикс. моб. шапка
+	mobHeaderInit   = true,
+	mobHeaderHeight = $('.mob_header').outerHeight()
+
+	$('.mob_header').wrap('<div class="mob_header_wrap"></div>')
+	$('.mob_header_wrap').height(mobHeaderHeight)
+
+	if($('.mob_header').hasClass('no_margin')) {
+		$('.mob_header_wrap').addClass('no_margin')
+	}
+
+	mobHeaderInit && $(window).scrollTop() > 0
+		? $('.mob_header').addClass('fixed')
+		: $('.mob_header').removeClass('fixed')
 })
 
 
@@ -953,6 +1008,11 @@ window.addEventListener('scroll', function () {
 	typeof headerInit !== 'undefined' && headerInit && $(window).scrollTop() > 0
 		? $('header').addClass('fixed')
 		: $('header').removeClass('fixed')
+
+	// Фикс. моб. шапка
+	typeof mobHeaderInit !== 'undefined' && mobHeaderInit && $(window).scrollTop() > 0
+		? $('.mob_header').addClass('fixed')
+		: $('.mob_header').removeClass('fixed')
 })
 
 
@@ -980,6 +1040,22 @@ window.addEventListener('resize', function () {
 			headerInit && $(window).scrollTop() > 0
 				? $('header').addClass('fixed')
 				: $('header').removeClass('fixed')
+		}, 100)
+
+
+		// Фикс. моб. шапка
+		mobHeaderInit = false
+		$('.mob_header_wrap').height('auto')
+
+		setTimeout(() => {
+			mobHeaderInit   = true
+			mobHeaderHeight = $('.mob_header').outerHeight()
+
+			$('.mob_header_wrap').height(mobHeaderHeight)
+
+			mobHeaderInit && $(window).scrollTop() > 0
+				? $('.mob_header').addClass('fixed')
+				: $('.mob_header').removeClass('fixed')
 		}, 100)
 
 
