@@ -578,6 +578,18 @@
 
 
 
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .data .favorite
+    {
+        bottom: auto;
+
+        margin: 0;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

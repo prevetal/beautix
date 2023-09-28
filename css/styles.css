@@ -1162,6 +1162,9 @@ header.fixed
 .mob_header .logo img
 {
     display: block;
+
+    width: 118px;
+    height: 32px;
 }
 
 
