@@ -598,6 +598,12 @@
     /*----------
         Kits
     ----------*/
+    .kits .head .icon
+    {
+        top: 24px;
+    }
+
+
     .kits .head .title
     {
         font-size: 20px;

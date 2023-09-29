@@ -4416,7 +4416,7 @@ aside
 }
 
 
-.comments .comment .thanks
+.comments .comment .thanks_btn
 {
     color: #141116;
     font-family: var(--font_family2);
@@ -4425,6 +4425,8 @@ aside
 
     display: flex;
 
+    width: 208px;
+    max-width: 100%;
     padding: 7px;
 
     transition: .2s linear;
@@ -4438,21 +4440,23 @@ aside
     flex-wrap: wrap;
 }
 
-.comments .comment .thanks:hover
+.comments .comment .thanks_btn:hover
 {
     background: rgba(97, 178, 59, .20);
     box-shadow: inset 0 0 0 1px rgba(97, 178, 59, .20);
 }
 
-.comments .comment .thanks.active
+.comments .comment .thanks_btn.active
 {
+    pointer-events: none;
+
     border-color: transparent;
     background: rgba(97, 178, 59, .20);
     box-shadow: none;
 }
 
 
-.comments .comment .thanks .icon
+.comments .comment .thanks_btn .icon
 {
     color: #61b23b;
 
@@ -4472,12 +4476,24 @@ aside
     flex-wrap: wrap;
 }
 
-.comments .comment .thanks .icon svg
+.comments .comment .thanks_btn .icon svg
 {
     display: block;
 
     width: 14px;
     height: 13px;
+}
+
+
+.comments .comment .thanks_btn span + span,
+.comments .comment .thanks_btn.active span
+{
+    display: none;
+}
+
+.comments .comment .thanks_btn.active span + span
+{
+    display: block;
 }
 
 
@@ -7018,13 +7034,11 @@ aside
 .kits .head .icon
 {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 18px;
     left: 0;
 
     width: 76px;
     height: 86px;
-    margin: auto;
 
     transition: transform .2s linear;
     transform: translateX(-33px);
@@ -7058,6 +7072,8 @@ aside
     font-weight: 700;
     line-height: 150%;
 
+    display: none;
+
     margin-top: 4px;
 }
 
@@ -7066,6 +7082,11 @@ aside
     color: currentColor;
 
     text-decoration: none;
+}
+
+.kits .head.active .link
+{
+    display: block;
 }
 
 

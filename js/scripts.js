@@ -869,7 +869,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Спасибо за ответ
-	$('.comments .comment .thanks').click(function(e) {
+	$('.comments .comment .thanks_btn').click(function(e) {
 		e.preventDefault()
 
 		$(this).toggleClass('active')
