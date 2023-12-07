@@ -3302,6 +3302,34 @@ aside
 }
 
 
+.articles .swiper
+{
+    overflow: visible !important;
+}
+
+
+.articles .swiper-slide
+{
+    position: relative;
+
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.articles .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
 .articles .row
 {
     margin-bottom: -32px;
@@ -6822,6 +6850,23 @@ aside
 }
 
 
+.products .row
+{
+    margin-bottom: -48px;
+    margin-left: -32px;
+
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.products .row > *
+{
+    width: calc(25% - 32px);
+    margin-bottom: 48px;
+    margin-left: 32px;
+}
+
+
 .products .product
 {
     position: relative;
@@ -6834,6 +6879,74 @@ aside
 
     border-radius: 16px;
     background: #f8f8f8;
+}
+
+
+.products .product .favorite_btn
+{
+    position: absolute;
+    z-index: 5;
+    top: 16px;
+    right: 16px;
+
+    display: flex;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.products .product .favorite_btn .icon
+{
+    display: block;
+
+    width: 14px;
+    height: 13px;
+}
+
+
+.products .product .favorite_btn span
+{
+    color: rgba(20, 17, 22, .60);
+    font-size: 13px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+
+    display: none;
+
+    height: 24px;
+    margin: auto 5px auto 0;
+    padding: 2px 8px;
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    border-radius: 100px;
+    background: rgba(97, 178, 59, .20);
+}
+
+
+.products .product .favorite_btn:hover span
+{
+    display: block;
+}
+
+
+.products .product .favorite_btn.active
+{
+    color: #fff;
+
+    background: #61b23b;
 }
 
 
@@ -6981,23 +7094,23 @@ aside
     background: #61b23b;
 }
 
-.products .product .link a:hover
+.products .product .link:hover
 {
     background: #57a035;
 }
 
 
-.products .product:hover
+.products .product:not(.no_hover):hover
 {
     padding-bottom: 72px;
 }
 
-.products .product:hover .thumb
+.products .product:not(.no_hover):hover .thumb
 {
     padding-bottom: calc(75.862% - 64px);
 }
 
-.products .product:hover .link
+.products .product:not(.no_hover):hover .link
 {
     transform: translateY(-64px);
 }
@@ -8516,6 +8629,384 @@ aside
     width: 100%;
 
     border-radius: 8px;
+}
+
+
+
+/*----------------------
+    Categories small
+----------------------*/
+.categories_small
+{
+    margin-bottom: 32px;
+    padding: 16px 0;
+}
+
+
+.categories_small .swiper
+{
+    overflow: visible !important;
+}
+
+
+.categories_small .swiper-slide
+{
+    width: 240px;
+}
+
+
+.categories_small .swiper-button-next,
+.categories_small .swiper-button-prev
+{
+    color: #fff;
+
+    top: 0;
+    bottom: 0;
+
+    width: 24px;
+    height: 24px;
+    margin: auto 0;
+
+    border-radius: 50%;
+    background: #61b23b;
+}
+
+.categories_small .swiper-button-prev
+{
+    right: auto;
+    left: 22px;
+}
+
+.categories_small .swiper-button-next
+{
+    right: 22px;
+}
+
+
+.categories_small .swiper-button-next .icon,
+.categories_small .swiper-button-prev .icon
+{
+    width: 6px;
+    height: 10px;
+
+    transform: none;
+}
+
+.categories_small .swiper-button-prev .icon
+{
+    transform: rotate(180deg);
+}
+
+
+.categories_small .swiper-button-disabled
+{
+    display: none;
+}
+
+
+.categories_small .category
+{
+    color: rgba(0, 0, 0, .90);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+
+    position: relative;
+
+    display: flex;
+    overflow: hidden;
+
+    height: 68px;
+    padding: 13px 30px 13px 74px;
+
+    transition: .2s linear;
+    text-decoration: none;
+
+    opacity: .7;
+    border: 2px solid transparent;
+    border-radius: 16px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.categories_small .category.color1
+{
+    background: #f6fbfb;
+}
+
+.categories_small .category.color2
+{
+    background: #e9d8ca;
+}
+
+.categories_small .category.color3
+{
+    background: #dbe2de;
+}
+
+.categories_small .category.color4
+{
+    background: #efe9e0;
+}
+
+.categories_small .category.color1
+{
+    background: #f6fbfb;
+}
+
+
+.categories_small .category .name
+{
+    font-weight: inherit;
+
+    display: block;
+}
+
+
+.categories_small .category .thumb
+{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+
+    display: flex;
+
+    width: 68px;
+    height: 68px;
+
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.categories_small .category .thumb img
+{
+    position: relative;
+    z-index: 3;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    mix-blend-mode: multiply;
+}
+
+
+.categories_small .category:hover
+{
+    opacity: 1;
+}
+
+.categories_small .category.active
+{
+    opacity: 1;
+    border-color: #61b23b;
+}
+
+
+
+/*-------------------
+    Category info
+-------------------*/
+.category_info .head
+{
+    display: flex;
+
+    margin-bottom: 40px;
+    margin-left: -8px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.category_info .head .sort
+{
+    position: relative;
+
+    width: 156px;
+    max-width: 100%;
+    margin-left: 8px;
+}
+
+
+.category_info .head select
+{
+    display: none;
+}
+
+
+.category_info .head .nice-select
+{
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+}
+
+
+.category_info .head .nice-select .current
+{
+    color: #000;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    line-height: 34px;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    height: 34px;
+    padding-right: 39px;
+    padding-left: 15px;
+
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    border-radius: 16px;
+    background: rgba(20, 17, 22, .05);
+}
+
+
+.category_info .head .nice-select-dropdown
+{
+    position: absolute;
+    z-index: 9;
+    top: 100%;
+    right: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    min-width: 100%;
+    margin-top: 4px;
+    padding: 3px;
+
+    transition: .2s linear;
+
+    opacity: 0;
+    border: 1px solid #f3f3f3;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.category_info .head .nice-select.open .nice-select-dropdown
+{
+    visibility: visible;
+
+    opacity: 1;
+}
+
+
+.category_info .head .nice-select .list .option
+{
+    color: #000;
+    font-size: 12px;
+
+    display: block;
+
+    padding: 4px 16px;
+
+    cursor: pointer;
+    transition: background .2s linear;
+    white-space: nowrap;
+
+    border-radius: 100px;
+}
+
+.category_info .head .nice-select .list .option + .option
+{
+    margin-top: 4px;
+}
+
+.category_info .head .nice-select .list .option:empty
+{
+    display: none;
+}
+
+.category_info .head .nice-select .list .option:hover,
+.category_info .head .nice-select .list .option.selected
+{
+    background: #f3f3f3;
+}
+
+
+.category_info .head .nice-select + .arr
+{
+    color: rgba(20, 17, 22, .60);
+
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 16px;
+    bottom: 0;
+
+    display: flex;
+
+    width: 16px;
+    height: 8px;
+    margin: auto;
+
+    transition: transform .2s linear;
+    pointer-events: none;
+}
+
+.category_info .head .nice-select.open + .arr
+{
+    transform: rotate(180deg);
+}
+
+
+.category_info .head .brands
+{
+    display: flex;
+
+    margin-bottom: -8px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.category_info .head .brands > *
+{
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+
+.category_info .head .brands .btn
+{
+    color: rgba(20, 17, 22, .80);
+    font-family: var(--font_family2);
+    font-size: 12px;
+    line-height: 150%;
+
+    display: block;
+
+    padding: 8px 16px;
+
+    transition: background .2s linear;
+
+    border-radius: 100px;
+    background: rgba(20, 17, 22, .05);
+}
+
+.category_info .head .brands .btn:hover,
+.category_info .head .brands .btn.active
+{
+    background: rgba(20, 17, 22, .10);
 }
 
 

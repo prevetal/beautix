@@ -169,6 +169,16 @@
 
 
 
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+
     /*-----------
         Stock
     -----------*/
@@ -810,6 +820,97 @@
     .photo_gallery .item .info
     {
         padding: 16px;
+    }
+
+
+
+    /*----------------------
+        Categories small
+    ----------------------*/
+    .categories_small
+    {
+        margin-bottom: 32px;
+        padding: 0;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .head
+    {
+        margin-bottom: 32px;
+        margin-left: 0;
+    }
+
+
+    .category_info .head .sort
+    {
+        margin-left: 0;
+    }
+
+
+    .category_info .head .brands
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 16px -24px 0;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .category_info .head .brands::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .category_info .head .brands::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .category_info .head .brands .btn
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .category_info .head .brands .btn + .btn
+    {
+        margin-left: 4px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row
+    {
+        margin-bottom: -32px;
+    }
+
+    .products .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 32px;
     }
 
 

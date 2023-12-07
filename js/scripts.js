@@ -139,6 +139,38 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
+	// Категории - мелкие
+	const categoriesSmallSliders = [],
+		categoriesSmall = document.querySelectorAll('.categories_small .swiper')
+
+	categoriesSmall.forEach(function (el, i) {
+		el.classList.add('categories_small_s' + i)
+
+		let options = {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			preloadImages: true,
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			spaceBetween: 16,
+			slidesPerView: 'auto',
+		}
+
+		categoriesSmallSliders.push(new Swiper('.categories_small_s' + i, options))
+	})
+
+
 	// Обучение
 	const educationSliders = [],
 		education = document.querySelectorAll('.education .swiper')
@@ -583,6 +615,64 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 
+	// Карусель статей
+	const articlesSliders = [],
+		articles = document.querySelectorAll('.articles .swiper:not(.mob_slider)')
+
+	articles.forEach(function (el, i) {
+		el.classList.add('articles_s' + i)
+
+		let options = {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			preloadImages: false,
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			breakpoints: {
+				0: {
+					spaceBetween: 24,
+					slidesPerView: 'auto'
+				},
+				768: {
+					spaceBetween: 24,
+					slidesPerView: 2
+				},
+				1024: {
+					spaceBetween: 24,
+					slidesPerView: 2
+				},
+				1280: {
+					spaceBetween: 32,
+					slidesPerView: 3
+				}
+			},
+			on: {
+				init: swiper => setHeight(swiper.el.querySelectorAll('.article')),
+				resize: swiper => {
+					let items = swiper.el.querySelectorAll('.article')
+
+					items.forEach(el => el.style.height = 'auto')
+
+					setHeight(items)
+				}
+			}
+		}
+
+		articlesSliders.push(new Swiper('.articles_s' + i, options))
+	})
+
+
 	// Акции
 	$('.stock .timer').each(function () {
 		let timerDate = $(this).data('date')
@@ -964,6 +1054,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		$('.stock').hide()
 	})
+
+
+	// Страница категории - бренды
+	$('.category_info .head .brands .btn').click(function(e) {
+		e.preventDefault()
+
+		$('.category_info .head .brands .btn').removeClass('active')
+		$(this).addClass('active')
+	})
 })
 
 
@@ -1160,7 +1259,7 @@ function initArticlesSliders() {
 
 		articlesSliders = []
 
-		$('.articles .swiper-wrapper').addClass('row').removeClass('swiper-wrapper')
+		$('.articles .mob_slider .swiper-wrapper').addClass('row').removeClass('swiper-wrapper')
 		$('.articles .mob_slider .row > *').removeClass('swiper-slide')
 	}
 }

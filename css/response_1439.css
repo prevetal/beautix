@@ -355,4 +355,44 @@
     {
         right: -140px;
     }
+
+
+
+    /*----------------------
+        Categories small
+    ----------------------*/
+    .categories_small
+    {
+        margin-bottom: 24px;
+        padding: 12px 0;
+    }
+
+
+    .categories_small .swiper-button-prev
+    {
+        left: -12px;
+    }
+
+    .categories_small .swiper-button-next
+    {
+        right: -12px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row
+    {
+        margin-bottom: -40px;
+        margin-left: -24px;
+    }
+
+    .products .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
 }
