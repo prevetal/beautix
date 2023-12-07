@@ -5586,7 +5586,8 @@ aside
     background: rgba(20, 17, 22, .05);
 }
 
-.where_buy .tags .btn:hover
+.where_buy .tags .btn:hover,
+.where_buy .tags .btn.active
 {
     background: rgba(20, 17, 22, .1);
 }
