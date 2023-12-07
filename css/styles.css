@@ -3231,7 +3231,8 @@ aside
     background: rgba(20, 17, 22, .05);
 }
 
-.articles .categories a:hover
+.articles .categories a:hover,
+.articles .categories a.active
 {
     background: rgba(20, 17, 22, .10);
 }
