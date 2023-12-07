@@ -922,7 +922,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Спойлер категорий
-	$('.product_info .categories .spoler_btn').click(function(e) {
+	$('.product_info .categories .spoler_btn, .articles .categories .spoler_btn').click(function(e) {
 		e.preventDefault()
 
 		let parent = $(this).closest('.categories')

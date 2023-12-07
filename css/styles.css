@@ -3211,6 +3211,11 @@ aside
     margin-left: 8px;
 }
 
+.articles .categories .list > *.hide
+{
+    display: none;
+}
+
 
 .articles .categories a
 {
@@ -3279,6 +3284,11 @@ aside
 .articles .categories .spoler_btn:hover
 {
     background: rgba(20, 17, 22, .10);
+}
+
+.articles .categories .spoler_btn.active .icon
+{
+    transform: rotate(180deg);
 }
 
 
