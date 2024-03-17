@@ -451,10 +451,10 @@
 
     .kits .product .thumb + *
     {
+        align-self: flex-start;
+
         width: calc(100% - 75px);
         padding-top: 32px;
-
-        align-self: flex-start;
     }
 
 
@@ -616,13 +616,14 @@
 
     footer .address
     {
-        color: rgba(255, 255, 255, .60);
         font-size: 17px;
         font-weight: 400;
         line-height: 150%;
 
         width: 274px;
         max-width: 100%;
+
+        color: rgba(255, 255, 255, .60);
     }
 
     footer .address br
@@ -635,10 +636,11 @@
     footer .email,
     footer .phone
     {
-        color: rgba(255, 255, 255, .8);
         font-size: 17px;
         font-weight: 400;
         line-height: 150%;
+
+        color: rgba(255, 255, 255, .8);
     }
 
 

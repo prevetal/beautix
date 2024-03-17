@@ -79,6 +79,10 @@
     {
         display: flex;
         overflow: auto;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         height: 100%;
         min-height: -moz-available;
@@ -86,10 +90,6 @@
         min-height:         fill-available;
         padding: 20px 0;
 
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
         overscroll-behavior-y: contain;
     }
 
@@ -407,12 +407,12 @@
 
     .about_brands .brand .image
     {
+        order: 2;
+
         width: 100%;
         height: 0;
         margin-top: 48px;
         padding-bottom: 60.702%;
-
-        order: 2;
     }
 
 
@@ -667,15 +667,14 @@
     .kits .product
     {
         display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         width: 100%;
 
         text-align: left;
-
-        justify-content: space-between;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
     }
 
 
@@ -689,9 +688,9 @@
 
     .kits .product .thumb + *
     {
-        width: calc(100% - 144px);
-
         align-self: center;
+
+        width: calc(100% - 144px);
     }
 
 
@@ -754,8 +753,6 @@
     .videos .wheelSlider-container .wheelSlider-arrow[data-action='prev'],
     .videos .wheelSlider-container .wheelSlider-arrow[data-action='next']
     {
-        color: rgba(255, 255, 255, .80);
-
         top: 100%;
         bottom: 0;
 
@@ -763,6 +760,7 @@
         height: 60px;
         margin: 0;
 
+        color: rgba(255, 255, 255, .80);
         background: rgba(255, 255, 255, .20);
     }
 

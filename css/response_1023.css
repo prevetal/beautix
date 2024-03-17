@@ -719,9 +719,9 @@
 
     .where_buy .shops .data
     {
-        width: 100%;
-
         order: 2;
+
+        width: 100%;
     }
 
 
@@ -1002,10 +1002,10 @@
 
     footer .links
     {
+        justify-content: space-between;
+
         width: 100%;
         margin-top: 60px;
-
-        justify-content: space-between;
     }
 
     footer .links > * + *

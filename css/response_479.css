@@ -79,9 +79,9 @@
     .comments .comment .reply_btn,
     .comments .comment .bottom .reply_btn
     {
-        margin-top: 24px;
-
         order: 2;
+
+        margin-top: 24px;
     }
 
 
