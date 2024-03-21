@@ -350,6 +350,37 @@
 
 
 
+    /*---------------
+        Line info
+    ---------------*/
+    .line_info .block_head .title
+    {
+        font-size: 40px;
+    }
+
+
+    .line_info .block_head .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .line_info .kits
+    {
+        padding: 24px;
+    }
+
+
+
+    .line_info .description
+    {
+        font-size: 18px;
+
+        margin-top: 60px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

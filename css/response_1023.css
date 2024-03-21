@@ -69,7 +69,6 @@
 
 
 
-
     /*----------------
         Block head
     ----------------*/
@@ -980,6 +979,37 @@
     .products .row > *
     {
         width: calc(50% - 24px);
+    }
+
+
+
+    /*---------------
+        Line info
+    ---------------*/
+    .line_info .block_head .title
+    {
+        font-size: 28px;
+    }
+
+
+    .line_info .block_head .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*-------------------
+        Line products
+    -------------------*/
+    .line_products .label
+    {
+        font-size: var(--font_size);
+    }
+
+    .line_products .label span
+    {
+        font-size: 18px;
     }
 
 

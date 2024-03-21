@@ -151,6 +151,7 @@ input[type=number]
     --font_family: 'TT Norms', 'Arial', sans-serif;
     --font_family2: 'Inter', 'Arial', sans-serif;
     --font_family3: 'Bebas Neue', 'Arial', sans-serif;
+    --font_family4: 'Vollkorn', 'Arial', sans-serif;
 }
 
 
@@ -203,12 +204,6 @@ html.custom_scroll ::-webkit-scrollbar
 html.custom_scroll ::-webkit-scrollbar-thumb
 {
     background-color: #61b23b;
-}
-
-html.custom_scroll
-{
-    scrollbar-color: #61b23b var(--bg);
-    scrollbar-width: thin;
 }
 
 
@@ -379,7 +374,20 @@ button
 }
 
 
-.fancybox__content > .carousel__button.is-close
+.fancybox__content > .carousel__button.is-close svg
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    filter: none;
+    stroke: none;
+    stroke-width: 0;
+}
+
+
+.modal.fancybox__content > .carousel__button.is-close
 {
     top: 24px;
     right: 24px;
@@ -407,7 +415,7 @@ button
 }
 
 
-.fancybox__content > .carousel__button.is-close:hover
+.modal.fancybox__content > .carousel__button.is-close:hover
 {
     background: rgba(20, 17, 22, .10);
 }
@@ -1266,6 +1274,17 @@ aside
     display: inline-block;
 
     vertical-align: top;
+}
+
+
+.breadcrumbs .current.crop
+{
+    overflow: hidden;
+
+    max-width: 361px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 
@@ -3843,6 +3862,8 @@ aside
     justify-content: flex-start;
 
     padding: 16px 32px;
+
+    text-decoration: none;
 
     color: #fff;
     border-radius: 8px;
@@ -8985,6 +9006,198 @@ aside
 .category_info .head .brands .btn.active
 {
     background: rgba(20, 17, 22, .10);
+}
+
+
+
+/*---------------
+    Line info
+---------------*/
+.line_info .block_head
+{
+    margin-bottom: 24px;
+}
+
+
+.line_info .block_head .title
+{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 120%;
+
+    color: rgba(20, 17, 22, .80);
+}
+
+
+.line_info .block_head .desc
+{
+    font-size: 23px;
+    line-height: 120%;
+
+    margin-top: 16px;
+
+    color: rgba(20, 17, 22, .80);
+}
+
+
+.line_info .kits
+{
+    margin: 0;
+    padding: 32px;
+
+    background: #f8f8f8;
+}
+
+
+
+.line_info .description
+{
+    font-family: var(--font_family2);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 173.523%;
+
+    width: 1024px;
+    max-width: 100%;
+    margin-top: 68px;
+
+    color: #1f1f1f;
+}
+
+
+
+/*-------------------
+    Line products
+-------------------*/
+.line_products .steps
+{
+    width: 1024px;
+    max-width: 100%;
+}
+
+
+.line_products .title
+{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-bottom: 53px;
+
+    color: #141116;
+}
+
+
+.line_products .step + .step
+{
+    margin-top: 37px;
+}
+
+
+.line_products .label
+{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-bottom: 8px;
+
+    color: #000;
+}
+
+
+.line_products .label span
+{
+    font-family: var(--font_family4);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-right: 8px;
+
+    color: #61b23b;
+}
+
+
+.line_products .items
+{
+    padding: 24px 32px;
+
+    border-radius: 16px;
+    background: rgba(20, 17, 22, .03);
+}
+
+
+.line_products .product
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+.line_products .product + .product
+{
+    margin-top: 32px;
+}
+
+
+.line_products .product .name
+{
+    font-family: var(--font_family2);
+    font-size: 13px;
+    line-height: 150%;
+
+    color: #000;
+}
+
+
+.line_products .product .name a
+{
+    display: inline-block;
+
+    vertical-align: top;
+
+    color: currentColor;
+}
+
+
+.line_products .product .price
+{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-left: 20px;
+
+    white-space: nowrap;
+
+    color: #000;
+}
+
+
+
+/*-----------
+    Lines
+-----------*/
+.lines .load_more
+{
+    margin-top: 20px;
+}
+
+
+.lines .load_more .btn
+{
+    color: #fff;
+    background: #61b23b;
 }
 
 

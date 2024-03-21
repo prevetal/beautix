@@ -326,6 +326,12 @@
     }
 
 
+    .kits .slider .swiper
+    {
+        padding-bottom: 84px;
+    }
+
+
 
     /*------------
         Videos
@@ -394,5 +400,66 @@
         width: calc(25% - 24px);
         margin-bottom: 40px;
         margin-left: 24px;
+    }
+
+
+
+    /*---------------
+        Line info
+    ---------------*/
+    .line_info .block_head .title
+    {
+        font-size: 36px;
+    }
+
+
+    .line_info .block_head .desc
+    {
+        font-size: 18px;
+    }
+
+
+
+    .line_info .description
+    {
+        font-size: 16px;
+
+        margin-top: 48px;
+    }
+
+
+
+    /*-------------------
+        Line products
+    -------------------*/
+    .line_products .title
+    {
+        font-size: 26px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .line_products .step + .step
+    {
+        margin-top: 32px;
+    }
+
+
+    .line_products .label span
+    {
+        font-size: 22px;
+    }
+
+
+    .line_products .items
+    {
+        padding: 20px 24px;
+    }
+
+
+    .line_products .product + .product
+    {
+        margin-top: 20px;
     }
 }

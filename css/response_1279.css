@@ -913,6 +913,49 @@
 
 
 
+    /*---------------
+        Line info
+    ---------------*/
+    .line_info .block_head .title
+    {
+        font-size: 32px;
+    }
+
+
+    .line_info .block_head .desc
+    {
+        font-size: 16px;
+
+        margin-top: 16px;
+    }
+
+
+
+    .line_info .description
+    {
+        font-size: var(--font_size);
+
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------------
+        Line products
+    -------------------*/
+    .line_products .title
+    {
+        font-size: 24px;
+    }
+
+
+    .line_products .label span
+    {
+        font-size: 20px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

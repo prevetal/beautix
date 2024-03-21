@@ -41,6 +41,16 @@
 
 
 
+    /*---------------
+        Page head
+    ---------------*/
+    .breadcrumbs .current.crop
+    {
+        max-width: 100%;
+    }
+
+
+
     /*----------------
         Block head
     ----------------*/
@@ -600,6 +610,26 @@
         bottom: auto;
 
         margin: 0;
+    }
+
+
+
+    /*---------------
+        Line info
+    ---------------*/
+    .line_info .block_head .title
+    {
+        font-size: var(--font_size_title);
+    }
+
+
+
+    /*-------------------
+        Line products
+    -------------------*/
+    .line_products .items
+    {
+        padding: 20px;
     }
 
 
