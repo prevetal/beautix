@@ -7171,6 +7171,8 @@ aside
     font-weight: 400;
     line-height: 120%;
 
+    cursor: pointer;
+
     color: rgba(20, 17, 22, .80);
 }
 
@@ -7181,6 +7183,8 @@ aside
     line-height: 150%;
 
     margin-top: 4px;
+
+    cursor: pointer;
 
     color: rgba(20, 17, 22, .80);
 }
@@ -7225,6 +7229,13 @@ aside
 
     color: #61b23b;
 }
+
+
+.kits .head .spoler_btn.active
+{
+    transform: translateY(calc(-50% - 15px));
+}
+
 
 .kits .head .spoler_btn span + span,
 .kits .head .spoler_btn.active span

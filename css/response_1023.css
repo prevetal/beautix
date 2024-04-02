@@ -816,13 +816,16 @@
     }
 
 
-    .kits .head .spoler_btn
+    .kits .head .spoler_btn,
+    .kits .head .spoler_btn.active
     {
         top: 40px;
         right: 16px;
         bottom: auto;
 
         margin: 0;
+
+        transform: translateY(-50%);
     }
 
 

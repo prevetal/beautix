@@ -707,10 +707,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Комплекты
-	$('.kits .head .spoler_btn').click(function(e) {
+	$('.kits .head .title, .kits .head .desc, .kits .head .spoler_btn').click(function(e) {
 		e.preventDefault()
 
-		$(this).toggleClass('active').closest('.head').toggleClass('active')
+		$('.kits .head .spoler_btn').toggleClass('active')
+		$(this).closest('.head').toggleClass('active')
 
 		$(this).closest('.section').find('.data').slideToggle(300)
 	})
